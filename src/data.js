@@ -12,9 +12,15 @@ const filterData = (data, condition) => {
 
 const computeStats = (estadistica) => {
   let percentage = (estadistica*100)/151;
+  /*let intPercentage = Math.round(percentage);*/
 
   return percentage;
 }
 
 window.filterData = filterData; 
 window.computeStats = computeStats;
+
+/*var porcentaje= (golpes / golpes-totales)*100;
+si necesitas la parte entera
+
+var intPorcentaje = Math.round( porcentaje );*/
