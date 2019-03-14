@@ -25,8 +25,12 @@ document.getElementById('pokefilter').addEventListener('change', () => {
     <p>${element.num}</p>
     <p>${element.type}</p>`
   })
+
+
+let estadistica = result.length;
+let resultEst = window.computeStats(estadistica);
+
+console.log(resultEst)
+
 });
-
-
-
 window.onload = showData(data);
