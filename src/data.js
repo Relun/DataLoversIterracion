@@ -10,4 +10,12 @@ const filterData = (data, condition) => {
   return filter;
 }
 
+/*const computeStats = (data) => {
+  let percentage = data.compute(element => {
+    return element.type.includes(condition)=== true;
+
+  }) 
+  return percentage;
+}*/
+
 window.filterData = filterData; 

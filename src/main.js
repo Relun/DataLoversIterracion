@@ -7,8 +7,10 @@ const showData = (data) => {
   // nombre y foto
   data.forEach(element => {
     // data[i]
-    container.innerHTML += `<p>${element.name}</p>
-                            <img class="image" src="${element.image}" alt="${element.name}">`
+    container.innerHTML += `<img class="image" src="${element.img}" alt="${element.name}">
+    <p>${element.name}</p>
+    <p>${element.num}</p>
+    <p>${element.type}</p>`
   })
 }
 
@@ -18,8 +20,10 @@ document.getElementById('pokefilter').addEventListener('change', () => {
 
   container.innerHTML = '';
   result.forEach(element => {
-    container.innerHTML += `<p>${element.name}</p>
-    <img class="image" src="${element.image}" alt="${element.name}">`
+    container.innerHTML += `<img class="image" src="${element.img}" alt="${element.name}">
+    <p>${element.name}</p>
+    <p>${element.num}</p>
+    <p>${element.type}</p>`
   })
 });
 
