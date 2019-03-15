@@ -9,6 +9,7 @@ const filterData = (data, condition) => {
   })
   return filter;
 }
+ 
 
 const computeStats = (estadistica) => {
   let percentage = (estadistica*100)/151;
@@ -18,3 +19,4 @@ const computeStats = (estadistica) => {
 
 window.filterData = filterData; 
 window.computeStats = computeStats;
+
