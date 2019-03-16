@@ -7,14 +7,19 @@ const showData = (data) => {
   // nombre y foto
   data.forEach(element => {
     // data[i]
-    container.innerHTML += `<div class="card" style="width: 12rem;">
-    <img src="${element.img}" class="card-img-top" alt="${element.name}">
-    <div class="card-body">
-    <h5 class="card-title">Nombre: ${element.name}</h5>
-    <p class="card-text">Número: ${element.num}</p>
-    <p class="card-text">Tipo: ${element.type}</p>
+    container.innerHTML += `
+    <div>
+    <div class="card">
+          <div class="box">
+          <img src="${element.img}" alt="${element.name}">
+          <div class="img">
+                  <h3>${element.name}</h3>
+                  <p>Número: ${element.num}</p>
+                  <p>Tipo:${element.type}</p>
+    </div>				 
     </div>
-</div> `
+    </div>
+    </div>` 
   })
 }
 
@@ -25,14 +30,18 @@ document.getElementById('pokefilter').addEventListener('change', () => {
   container.innerHTML = '';
   result.forEach(element => {
     container.innerHTML += `
-    <div class="card" style="width: 12rem;">
-      <img src="${element.img}" class="card-img-top" alt="${element.name}">
-      <div class="card-body">
-      <h5 class="card-title">Nombre: ${element.name}</h5>
-      <p class="card-text">Número: ${element.num}</p>
-      <p class="card-text">Tipo: ${element.type}</p>
-      </div>
-</div> `
+    <div>
+    <div class="card">
+          <div class="box">
+          <img src="${element.img}" alt="${element.name}">
+          <div class="img">
+                  <h3>${element.name}</h3>
+                  <p>Número: ${element.num}</p>
+                  <p>Tipo:${element.type}</p>
+    </div>				 
+    </div>
+    </div>
+    </div>` 
 
   });
 
