@@ -49,10 +49,7 @@ let estadistica = result.length;
 let resultEst = window.computeStats(estadistica);
 
 let result2 = document.getElementById('estadistic');
- result2.innerHTML = `<p class="card-text">${resultEst.toFixed(2)}% del total de Pokémones son de este tipo</p>
- <p class="card-text">${estadistica} Pokémones son de este tipo</p>`
+ result2.innerHTML = `<p class="card-text">De los 151 Pokémones, ${estadistica} son de este tipo, lo que corresponde al ${resultEst.toFixed(2)}% del total.</p>`
 
-//console.log(resultEst.toFixed(2))
-//console.log(estadistica)
 })
 window.onload = showData(data);
