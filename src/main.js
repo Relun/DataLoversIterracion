@@ -15,7 +15,7 @@ const showData = (data) => {
           <div class="img">
                   <h3>${element.name}</h3>
                   <p>Número: ${element.num}</p>
-                  <p>Tipo:${element.type}</p>
+                  <p>Tipo:c${element.type}</p>
     </div>				 
     </div>
     </div>
@@ -37,7 +37,7 @@ document.getElementById('pokefilter').addEventListener('change', () => {
           <div class="img">
                   <h3>${element.name}</h3>
                   <p>Número: ${element.num}</p>
-                  <p>Tipo:${element.type}</p>
+                  <p>Tipo: ${element.type}</p>
     </div>				 
     </div>
     </div>
